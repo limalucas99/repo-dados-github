@@ -30,7 +30,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Exibindo o contexto de input completo
-              run: echo "{{ toJson(inputs)}}"
+              run: echo "${{ toJson(inputs) }}"
             - name: Exibindo os valores individualmente
               run: |
                 echo "Esses são os valores passados nos inputs"
