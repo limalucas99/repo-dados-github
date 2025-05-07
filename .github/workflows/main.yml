@@ -33,8 +33,8 @@ jobs:
               run: echo "{{ toJson(inputs)}}"
             - name: Exibindo os valores individualmente
               run: |
-                echo: "Esses são os valores passados nos inputs"
-                echo: "A versão é: ${{ inputs.versao }}"
-                echo: "O card é: ${{ inputs.numero_card }}"
-                echo: "Deve fazer deploy?: ${{ inputs.fazer_deploy }}"
-                echo: "O Ambiente é: ${{ inputs.ambiente }}"
+                echo "Esses são os valores passados nos inputs"
+                echo "A versão é: ${{ inputs.versao }}"
+                echo "O card é: ${{ inputs.numero_card }}"
+                echo "Deve fazer deploy?: ${{ inputs.fazer_deploy }}"
+                echo "O Ambiente é: ${{ inputs.ambiente }}"
